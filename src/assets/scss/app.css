@@ -1,0 +1,172 @@
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  color: #0084bf; }
+  a:visited:active {
+    color: #665ed0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.main {
+  padding-top: 90px;
+  padding-bottom: 100px; }
+
+.intro-page {
+  min-height: 100vh; }
+
+.main-menu {
+  margin-left: 30px; }
+  .main-menu .nav-item.active {
+    font-weight: 700; }
+
+.navbar-brand {
+  font-weight: 500; }
+
+html {
+  background: #f6f6f6; }
+
+body {
+  background: transparent; }
+
+.box-shadow {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+.field-wrap, .form-control, .input, .textarea {
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.25); }
+
+.input {
+  height: 40px; }
+
+.form-group {
+  margin-bottom: 15px; }
+  .form-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px; }
+
+.fg-basic {
+  width: 180px;
+  margin-right: 15px; }
+
+.form-control {
+  width: 100%;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px; }
+
+.input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.2); }
+
+.input::-moz-placeholder, .textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.2); }
+
+.input:-ms-input-placeholder, .textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(0, 0, 0, 0.2); }
+
+.input:-moz-placeholder, .textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.2); }
+
+.form-group.has-error .input::-webkit-input-placeholder, .form-group.has-error .textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #FD4F4F; }
+
+.form-group.has-error .input::-moz-placeholder, .form-group.has-error .textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #FD4F4F; }
+
+.form-group.has-error .input:-ms-input-placeholder, .form-group.has-error .textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #FD4F4F; }
+
+.form-group.has-error .input:-moz-placeholder, .form-group.has-error .textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #FD4F4F; }
+
+.form-group.has-error .input-icon-wrap .i-icon {
+  color: #FD4F4F; }
+
+.form-group.has-error .field-wrap, .form-group.has-error .form-control, .form-group.has-error .input, .form-group.has-error .textarea {
+  border-color: #FD4F4F; }
+
+.btn {
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 15px;
+  font-weight: 500;
+  transition-duration: 167ms;
+  transition-property: background-color,box-shadow,color;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+
+.btn-default {
+  background-color: #ffffff; }
+
+.btn-primary {
+  background-color: #0084BF;
+  color: #ffffff; }
+  .btn-primary:hover {
+    background-color: #0073b1; }
+
+.btn-line-primary {
+  background-color: #ffffff;
+  color: #0084BF;
+  box-shadow: inset 0 0 0 1px #0084BF, inset 0 0 0 2px transparent, inset 0 0 0 3px transparent; }
+  .btn-line-primary:hover {
+    background-color: rgba(0, 132, 191, 0.4); }
+
+.btn-line-tran {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 0 1px #0084BF, inset 0 0 0 2px transparent, inset 0 0 0 3px transparent;
+  display: flex;
+  align-items: center; }
+  .btn-line-tran:hover {
+    background-color: rgba(0, 132, 191, 0.4);
+    color: #ffffff; }
+  .btn-line-tran .ico {
+    margin-right: 15px;
+    font-size: 20px; }
+  .btn-line-tran.active {
+    color: #ffffff; }
+
+.btn-x {
+  min-width: 250px; }
+
+.btn-width-100 {
+  width: 100%; }
+
+.btn-delete {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #c4c4c4; }
+  .btn-delete:hover {
+    border-color: #c4c4c4;
+    color: rgba(0, 0, 0, 0.75); }
+
+.btn-small-icon {
+  outline: none;
+  display: inline-block;
+  height: 24px;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.25); }
+  .btn-small-icon:hover {
+    background: #d4d4d4;
+    color: darkslategray;
+    text-decoration: none; }
