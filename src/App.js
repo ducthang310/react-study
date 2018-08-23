@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'semantic-ui-react'
+import Config  from './components/config'
 
 class App extends Component {
   render() {
@@ -8,68 +8,76 @@ class App extends Component {
           <header className="ui fixed inverted menu">
               <div className="header item">Brand</div>
               <div className="active item">Link</div>
-              <a className="item">Link</a>
-              <div className="ui dropdown item" tabIndex="0">
-                  Dropdown
-                  <i className="dropdown icon"></i>
-                  <div className="menu transition hidden" tabIndex="-1">
-                      <div className="item">Action</div>
-                      <div className="item">Another Action</div>
-                      <div className="item">Something else here</div>
-                      <div className="divider"></div>
-                      <div className="item">Separated Link</div>
-                      <div className="divider"></div>
-                      <div className="item">One more separated link</div>
-                  </div>
-              </div>
           </header>
 
           <main role="main" className="main">
               <div className="ui container grid ">
                   <div className="ten wide column">
-                      <form className="ui form">
-                          <div className="field">
-                              <label>First Name</label>
-                              <input type="text" name="first-name" placeholder="First Name"/>
+                      <form className="ui form segment">
+                          <div className='equal width fields'>
+                              <div className='field'>
+                                  <label htmlFor='form-input-control-first-name'>First name</label>
+                                  <input type='text' id='form-input-control-first-name' placeholder='First name'/>
+                              </div>
+                              <div className='field'>
+                                  <label htmlFor='form-input-control-last-name'>Last name</label>
+                                  <input type='text' id='form-input-control-last-name' placeholder='Last name'/>
+                              </div>
                           </div>
-                          <div className="field">
-                              <label>Last Name</label>
-                              <input type="text" name="last-name" placeholder="Last Name"/>
+                          <div className='equal width fields'>
+                              <div className='field'>
+                                  <label htmlFor='form-input-control-phone'>Phone</label>
+                                  <input type='text' id='form-input-control-phone' placeholder='Phone'/>
+                              </div>
+                              <div className='field'>
+                                  <label htmlFor='form-input-control-company'>Company</label>
+                                  <input type='text' id='form-input-control-company' placeholder='Company'/>
+                              </div>
                           </div>
                           <button className="ui button" type="submit">Submit</button>
                       </form>
 
-                      <div className="ui relaxed divided list">
-                          <div className="item">
-                              <i className="large github middle aligned icon"></i>
-                              <div className="content">
-                                  <a className="header">Semantic-Org/Semantic-UI</a>
-                                  <div className="description">Updated 10 mins ago</div>
+                      <div className="ui segment">
+                          <div className='ui header no-anchor'>
+                              Result:
+                          </div>
+
+                          <div className='ui divider'/>
+
+                          <div className="ui relaxed divided list n-list">
+                              <div className="item">
+                                  <i className="large github middle aligned icon"></i>
+                                  <div className="content">
+                                      <a className="header">Semantic-Org/Semantic-UI</a>
+                                      <div className="description">Updated 10 mins ago</div>
+                                  </div>
+                              </div>
+                              <div className="item">
+                                  <i className="large github middle aligned icon"></i>
+                                  <div className="content">
+                                      <a className="header">Semantic-Org/Semantic-UI-Docs</a>
+                                      <div className="description">Updated 22 mins ago</div>
+                                  </div>
+                              </div>
+                              <div className="item">
+                                  <i className="large github middle aligned icon"></i>
+                                  <div className="content">
+                                      <a className="header">Semantic-Org/Semantic-UI-Meteor</a>
+                                      <div className="description">Updated 34 mins ago</div>
+                                  </div>
                               </div>
                           </div>
-                          <div className="item">
-                              <i className="large github middle aligned icon"></i>
-                              <div className="content">
-                                  <a className="header">Semantic-Org/Semantic-UI-Docs</a>
-                                  <div className="description">Updated 22 mins ago</div>
+
+                          <div className='ui  transition visible dimmer'>
+                              <div className='content'>
+                                  <div className='ui text loader'>Loading</div>
                               </div>
                           </div>
-                          <div className="item">
-                              <i className="large github middle aligned icon"></i>
-                              <div className="content">
-                                  <a className="header">Semantic-Org/Semantic-UI-Meteor</a>
-                                  <div className="description">Updated 34 mins ago</div>
-                              </div>
-                          </div>
+
                       </div>
                   </div>
 
-                  <div className="six wide column">
-                      <form className="ui segment">
-                          <input type="text" placeholder="Keyword" />
-                          <Button type="submit" >Search</Button>
-                      </form>
-                  </div>
+                  <Config/>
               </div>
 
           </main>

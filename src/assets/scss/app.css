@@ -170,3 +170,6 @@ body {
     background: #d4d4d4;
     color: darkslategray;
     text-decoration: none; }
+
+.n-list {
+  padding-bottom: 20px; }
